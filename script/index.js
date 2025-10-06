@@ -1,12 +1,12 @@
 const headerMenu = document.querySelector(".header__menu");
 const dropBox = document.querySelector(".drop-box");
-const menu1 = document.getElementById("drop-down-1");
-const menu2 = document.getElementById("drop-down-2");
-const menu3 = document.getElementById("drop-down-3");
-const menu4 = document.getElementById("drop-down-4");
-const menu5 = document.getElementById("drop-down-5");
-const menu6 = document.getElementById("drop-down-6");
-const menu7 = document.getElementById("drop-down-7");
+const menu1 = document.getElementById("dropDown1");
+const menu2 = document.getElementById("dropDown2");
+const menu3 = document.getElementById("dropDown3");
+const menu4 = document.getElementById("dropDown4");
+const menu5 = document.getElementById("dropDown5");
+const menu6 = document.getElementById("dropDown6");
+const menu7 = document.getElementById("dropDown7");
 const content1 = document.querySelector(".drop-content-1");
 const content2 = document.querySelector(".drop-content-2");
 const content3 = document.querySelector(".drop-content-3");
@@ -84,3 +84,37 @@ menuLinks.forEach((link) => {
 
 const today = new Date();
 document.getElementById("todayDate").textContent = today.toLocaleDateString();
+
+const percentBar = document.querySelectorAll(".percent-bar");
+
+percentBar.forEach((bar) => {
+  const target = bar.getAttribute("data-value");
+  let width = 0;
+
+  const interval = setInterval(() => {
+    if (width >= target) {
+      clearInterval(interval);
+    } else {
+      width++;
+      bar.style.width = width + "%";
+      bar.textContent = width + "%";
+    }
+  }, 10);
+});
+
+percentBar.forEach((bar) => {
+  const target = bar.getAttribute("data-value");
+  const parent = bar.closest(
+    ".sum__main-1, .sum__main-2, .sum__main-3, .sum__main-4, .sum__main-5"
+  );
+  const iconUp = parent.querySelector(".fa-caret-up");
+  const iconDown = parent.querySelector(".fa-caret-down");
+
+  iconUp.classList.remove("show");
+  iconDown.classList.remove("show");
+  if (target >= 50) {
+    iconUp.classList.add("show");
+  } else {
+    iconDown.classList.add("show");
+  }
+});

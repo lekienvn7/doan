@@ -11,18 +11,19 @@
 </head>
 
 <body>
+    <img src="./img/logo.png" alt="png" class="watermark">
     <header>
         <div class="header__container">
             <a href="index.html" class="header__logo">UNETI</a>
             <div class="header__menu">
                 <ul>
-                    <li class="drop-down" id="drop-down-1"><a href="./index.html">Trang chủ</a> </li>
-                    <li class="drop-down" id="drop-down-2"><a href="#">Kho vật tư</a></li>
-                    <li class="drop-down" id="drop-down-3"><a href="#">Thiết bị/Dụng cụ</a></li>
-                    <li class="drop-down" id="drop-down-4"><a href="#">Người dùng</a></li>
-                    <li class="drop-down" id="drop-down-5"><a href="#">Báo cáo</a></li>
-                    <li class="drop-down" id="drop-down-6"><a href="#">Hệ thống</a></li>
-                    <li class="drop-down" id="drop-down-7"><a href="#">Liên hệ/Trợ giúp</a></li>
+                    <li class="drop-down" id="dropDown1"><a href="./index.html">Trang chủ</a> </li>
+                    <li class="drop-down" id="dropDown2"><a href="#">Kho vật tư</a></li>
+                    <li class="drop-down" id="dropDown3"><a href="#">Thiết bị/Dụng cụ</a></li>
+                    <li class="drop-down" id="dropDown4"><a href="#">Người dùng</a></li>
+                    <li class="drop-down" id="dropDown5"><a href="#">Báo cáo</a></li>
+                    <li class="drop-down" id="dropDown6"><a href="#">Hệ thống</a></li>
+                    <li class="drop-down" id="dropDown7"><a href="#">Liên hệ/Trợ giúp</a></li>
                 </ul>
             </div>
             <div class="header__find-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
@@ -80,7 +81,7 @@
                     <p style="font-size: 20px; font-weight: bold;">Tổng Quan Hôm Nay</p>
                     <p id="todayDate" class="todayDate"></p>
                 </div>
-                <div class="sum__header__export"><i class="fa-solid fa-download"></i> Xuất File</div>
+                <div class="sum__header__export"><a href="#"><i class="fa-solid fa-download"></i> Xuất File</a></div>
             </div>
             <div class="sum__main">
                 <div class="sum__main-1">
@@ -91,6 +92,72 @@
                     <div class="main__data">
                         <p>880</p>
                         <i class="fa-solid fa-caret-up" style="color: green; margin-top: 11px; margin-left: 14px;"></i>
+                        <i class="fa-solid fa-caret-down"
+                            style="color: red; margin-top: 5px; margin-left: 14px; margin-bottom: 6px;"></i>
+                    </div>
+                    <div class="percent-container">
+                        <div class="percent-bar" data-value="90">0%</div>
+                    </div>
+                </div>
+                <div class="sum__main-2">
+                    <div class="main__text">
+                        <p>Tổng thiết bị</p>
+                        <i class="fa-solid fa-warehouse" style="color: white;"></i>
+                    </div>
+                    <div class="main__data">
+                        <p>68</p>
+                        <i class="fa-solid fa-caret-up" class="up"
+                            style="color: green; margin-top: 11px; margin-left: 14px;"></i>
+                        <i class="fa-solid fa-caret-down"
+                            style="color: red; margin-top: 5px; margin-left: 14px; margin-bottom: 6px;"></i>
+                    </div>
+                    <div class="percent-container">
+                        <div class="percent-bar" data-value="89">0%</div>
+                    </div>
+                </div>
+                <div class="sum__main-3">
+                    <div class="main__text">
+                        <p>Xuất kho</p>
+                        <i class="fa-solid fa-warehouse" style="color: white;"></i>
+                    </div>
+                    <div class="main__data">
+                        <p>366</p>
+                        <i class="fa-solid fa-caret-up" style="color: green; margin-top: 11px; margin-left: 14px;"></i>
+                        <i class="fa-solid fa-caret-down"
+                            style="color: red; margin-top: 5px; margin-left: 14px; margin-bottom: 6px;"></i>
+                    </div>
+                    <div class="percent-container">
+                        <div class="percent-bar" data-value="48">0%</div>
+                    </div>
+                </div>
+                <div class="sum__main-4">
+                    <div class="main__text">
+                        <p>Chờ duyệt</p>
+                        <i class="fa-solid fa-warehouse" style="color: white;"></i>
+                    </div>
+                    <div class="main__data">
+                        <p>19</p>
+                        <i class="fa-solid fa-caret-up" style="color: green; margin-top: 11px; margin-left: 14px;"></i>
+                        <i class="fa-solid fa-caret-down"
+                            style="color: red; margin-top: 5px; margin-left: 14px; margin-bottom: 6px;"></i>
+                    </div>
+                    <div class="percent-container">
+                        <div class="percent-bar" data-value="36">0%</div>
+                    </div>
+                </div>
+                <div class="sum__main-5">
+                    <div class="main__text">
+                        <p>Đang bảo trì</p>
+                        <i class="fa-solid fa-warehouse" style="color: white;"></i>
+                    </div>
+                    <div class="main__data">
+                        <p>6</p>
+                        <i class="fa-solid fa-caret-up" style="color: green; margin-top: 11px; margin-left: 14px;"></i>
+                        <i class="fa-solid fa-caret-down"
+                            style="color: red; margin-top: 5px; margin-left: 14px; margin-bottom: 6px;"></i>
+                    </div>
+                    <div class="percent-container">
+                        <div class="percent-bar" data-value="2">0%</div>
                     </div>
                 </div>
             </div>
