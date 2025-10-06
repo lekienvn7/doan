@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./asset/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <title>Kho Vật Tư - Trang chủ</title>
+</head>
+
+<body>
+    <header>
+        <div class="header__container">
+            <a href="index.html" class="header__logo">UNETI</a>
+            <div class="header__menu">
+                <ul>
+                    <li class="drop-down" id="drop-down-1"><a href="./index.html">Trang chủ</a> </li>
+                    <li class="drop-down" id="drop-down-2"><a href="#">Kho vật tư</a></li>
+                    <li class="drop-down" id="drop-down-3"><a href="#">Thiết bị/Dụng cụ</a></li>
+                    <li class="drop-down" id="drop-down-4"><a href="#">Người dùng</a></li>
+                    <li class="drop-down" id="drop-down-5"><a href="#">Báo cáo</a></li>
+                    <li class="drop-down" id="drop-down-6"><a href="#">Hệ thống</a></li>
+                    <li class="drop-down" id="drop-down-7"><a href="#">Liên hệ/Trợ giúp</a></li>
+                </ul>
+            </div>
+            <div class="header__find-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+            <button class="button-login"><i class="fa-solid fa-arrow-right-to-bracket"></i>
+            </button>
+        </div>
+        <div class="drop-box" id="box1">
+            <ul class="drop-content-1">
+                <li><a href="#">Giới thiệu hệ thống</a></li>
+                <li><a href="#">Thống kê tổng quan</a></li>
+                <li><a href="#">Thông báo</a></li>
+            </ul>
+            <ul class="drop-content-2">
+                <li><a href="#">Danh sách vật tư</a></li>
+                <li><a href="#">Thêm vật tư mới</a></li>
+                <li><a href="#">Điều chuyển vật tư</a></li>
+                <li><a href="#">Kiểm kê tồn kho</a></li>
+            </ul>
+            <ul class="drop-content-3">
+                <li><a href="#">Danh mục thiết bị</a></li>
+                <li><a href="#">Lịch sử sử dụng/bảo trì</a></li>
+                <li><a href="#">Đăng ký mượn thiết bị</a></li>
+                <li><a href="#">Báo hỏng/mất thiết bị</a></li>
+            </ul>
+            <ul class="drop-content-4">
+                <li><a href="#">Giảng viên/Quản lý</a></li>
+                <li><a href="#">Sinh viên/Thực tập sinh</a></li>
+                <li><a href="#">Phân quyền/cấp quyền sử dụng</a></li>
+                <li><a href="#">Thông tin cá nhân/đổi mật khẩu</a></li>
+            </ul>
+            <ul class="drop-content-5">
+                <li><a href="#">Xuất - Nhập - Tồn</a></li>
+                <li><a href="#">Chi phí vật tư</a></li>
+                <li><a href="#">Lịch sử hoạt động</a></li>
+                <li><a href="#">Xuất file Excel/PDF</a></li>
+            </ul>
+            <ul class="drop-content-6">
+                <li><a href="#">Quản lý dữ liệu</a></li>
+                <li><a href="#">Phân quyền truy cập</a></li>
+                <li><a href="#">Cấu hình kho/danh mục chính</a></li>
+                <li><a href="#">Dọn dẹp/sao lưu dữ liệu</a></li>
+            </ul>
+            <ul class="drop-content-7">
+                <li><a href="#">Liên hệ ban quản trị</a></li>
+                <li><a href="#">Hướng dẫn sử dụng</a></li>
+                <li><a href="#">Câu hỏi thường gặp (FAQ)</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="sum-cards">
+            <div class="sum__header">
+                <div class="sum__header__text">
+                    <p style="font-size: 20px; font-weight: bold;">Tổng Quan Hôm Nay</p>
+                    <p id="todayDate" class="todayDate"></p>
+                </div>
+                <div class="sum__header__export"><i class="fa-solid fa-download"></i> Xuất File</div>
+            </div>
+            <div class="sum__main">
+                <div class="sum__main-1">
+                    <div class="main__text">
+                        <p>Tổng vật tư</p>
+                        <i class="fa-solid fa-warehouse" style="color: white;"></i>
+                    </div>
+                    <div class="main__data">
+                        <p>880</p>
+                        <i class="fa-solid fa-caret-up" style="color: green; margin-top: 11px; margin-left: 14px;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./script/index.js"></script>
+</body>
+
+</html>
