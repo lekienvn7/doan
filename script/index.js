@@ -130,7 +130,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let current = 0;
 
     const stepTime = 10;
-    const increment = Math.ceil(target / (1000 / stepTime));
+    const increment  = Math.ceil(target / (1000 / stepTime));
 
     const interval = setInterval(() => {
       current += increment;

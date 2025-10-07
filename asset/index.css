@@ -302,13 +302,13 @@ main {
   width: 150px;
   height: 150px;
   padding: 10px;
-  background: linear-gradient(120deg, #ffffff, #ff6d6c);
+  background: linear-gradient(120deg, #ffffff, #020202);
   border-radius: 12px;
   font-size: 15px;
   cursor: pointer;
 
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-  transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .main__text {
   font-weight: bold;
@@ -330,13 +330,13 @@ main {
   width: 150px;
   height: 150px;
   padding: 10px;
-  background: linear-gradient(120deg, #ffffff, #37e499);
+  background: linear-gradient(120deg, #ffffff, #020202);
   border-radius: 12px;
   cursor: pointer;
   font-size: 15px;
 
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-  transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .sum__main-2:hover {
   transform: scale(1.05);
@@ -346,13 +346,13 @@ main {
   width: 150px;
   height: 150px;
   padding: 10px;
-  background: linear-gradient(120deg, #ffffff, #1eb7ee);
+  background: linear-gradient(120deg, #ffffff, #020202);
   border-radius: 12px;
   cursor: pointer;
   font-size: 15px;
 
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-  transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .sum__main-3:hover {
   transform: scale(1.05);
@@ -362,13 +362,13 @@ main {
   width: 150px;
   height: 150px;
   padding: 10px;
-  background: linear-gradient(120deg, #ffffff, #ee6a1e);
+  background: linear-gradient(120deg, #ffffff, #020202);
   border-radius: 12px;
   cursor: pointer;
   font-size: 15px;
 
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-  transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .sum__main-4:hover {
   transform: scale(1.05);
@@ -378,13 +378,13 @@ main {
   width: 150px;
   height: 150px;
   padding: 10px;
-  background: linear-gradient(120deg, #ffffff, #ee1eba);
+  background: linear-gradient(120deg, #ffffff, #020202);
   border-radius: 12px;
   cursor: pointer;
   font-size: 15px;
 
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-  transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .sum__main-5:hover {
   transform: scale(1.05);
@@ -395,7 +395,8 @@ main {
   opacity: 0;
   pointer-events: none;
 
-  transition: transform 0.35s cubic-bezier(0.25, 1, 0.5, 1), color 0.2s ease;
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    color 0.2s ease;
 }
 
 .main__data i.fa-caret-up.show {
@@ -422,7 +423,7 @@ main {
   width: 0%;
   border-radius: 8px;
   background: #1f96e6;
-  transition: width 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: width 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -434,7 +435,7 @@ main {
   position: fixed;
   padding: 20px;
   width: 385px;
-  height: 536px;
+  height: 556px;
   left: 950px;
   top: 70px;
   background-color: #f8f9fa;
@@ -472,14 +473,17 @@ main {
   flex-direction: column;
   padding: 10px;
   margin-left: 0px;
-  width: 400px;
-  height: 170px;
+  width: 350px;
+  height: 230px;
   margin-top: 10px;
   gap: 5px;
   background: transparent;
 
-  overflow-y: auto;
+  overflow-y: scroll;
   overflow-x: hidden;
+}
+.notice__main::-webkit-scrollbar {
+  display: none;
 }
 
 .notice {
@@ -491,12 +495,54 @@ main {
   backdrop-filter: blur(12px) saturate(180%);
   -webkit-backdrop-filter: blur(12px) saturate(180%);
 
-  transition: transform 0.35s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .notice:hover {
   transform: scale(1.05);
 }
+.notice p {
+  cursor: pointer;
+}
 
 .notice__tittle {
   font-weight: bold;
+}
+
+.quick__main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 10px;
+  margin-left: 15px;
+  gap: 10px;
+}
+
+.quick {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  background-color: rgba(173, 216, 230, 0.2);
+  height: 80px;
+  width: 80px;
+  color: black;
+  gap: 5px;
+  border-radius: 12px;
+
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.quick.switch-wrapper-ios {
+  background-color: #f8f9fa;
+}
+
+.quick:hover {
+  transform: scale(1.05);
+}
+.quick i {
+  font-size: 25px;
+}
+.quick a {
+  color: black;
+  text-decoration: none;
+  font-size: 12px;
 }
