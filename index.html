@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.0.7/countUp.min.js"></script>
 
-    <title>Kho Vật Tư - Trang chủ</title>
+    <title>Trang chủ</title>
 </head>
 
 <body>
@@ -19,7 +19,7 @@
             <div class="header__menu">
                 <ul>
                     <li class="drop-down" id="dropDown1"><a href="./index.html">Trang chủ</a> </li>
-                    <li class="drop-down" id="dropDown2"><a href="#">Kho vật tư</a></li>
+                    <li class="drop-down" id="dropDown2"><a href="./kho.html">Kho vật tư</a></li>
                     <li class="drop-down" id="dropDown3"><a href="#">Thiết bị/Dụng cụ</a></li>
                     <li class="drop-down" id="dropDown4"><a href="#">Người dùng</a></li>
                     <li class="drop-down" id="dropDown5"><a href="#">Báo cáo</a></li>
@@ -34,7 +34,7 @@
         <div class="drop-box" id="box1">
             <ul class="drop-content-1">
                 <li><a href="#">Giới thiệu hệ thống</a></li>
-                <li><a href="#">Thống kê tổng quan</a></li>
+                <li><a href="#sumCards">Thống kê tổng quan</a></li>
                 <li><a href="#">Thông báo</a></li>
             </ul>
             <ul class="drop-content-2">
@@ -76,7 +76,7 @@
     </header>
 
     <main>
-        <div class="sum-cards">
+        <div class="sum-cards" id="sumCards">
             <div class="sum__header">
                 <div class="sum__header__text">
                     <p style="font-size: 20px; font-weight: bold;">Tổng Quan Hôm Nay</p>
@@ -182,7 +182,7 @@
                 </div>
                 <div class="notice notice2">
                     <p class="notice__tittle">Vật tư</p>
-                    <p class="notice__main-text">Còn 2 chiếc kéo trong kho</p>
+                    <p class="notice__main-text">Còn 1 lọ mực in trong kho</p>
                 </div>
                 <div class="notice notice2">
                     <p class="notice__tittle">Bảo trì</p>
@@ -206,7 +206,7 @@
                 </div>
                 <div class="notice notice2">
                     <p class="notice__tittle">Vật tư</p>
-                    <p class="notice__main-text">Còn 2 chiếc kéo trong kho</p>
+                    <p class="notice__main-text">Còn 2 ống PVC trong kho</p>
                 </div>
                 <div class="notice notice2">
                     <p class="notice__tittle">Bảo trì</p>
@@ -255,7 +255,7 @@
                         <label class="tgl-btn-ios" for="switch-ios"></label>
                         <p style="font-size: 12px;">Đổi giao diện</p>
                     </div>
-                    
+
                     <style>
                         .switch-wrapper-ios .tgl-ios {
                             display: none;
