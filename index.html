@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./asset/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.0.7/countUp.min.js"></script>
 
     <title>Kho Vật Tư - Trang chủ</title>
 </head>
@@ -81,7 +82,7 @@
                     <p style="font-size: 20px; font-weight: bold;">Tổng Quan Hôm Nay</p>
                     <p id="todayDate" class="todayDate"></p>
                 </div>
-                <div class="sum__header__export"><a href="#"><i class="fa-solid fa-download"></i> Xuất File</a></div>
+                <div class="sum__header__export"><a href="#"><i class="fa-solid fa-download"></i>Xuất File</a></div>
             </div>
             <div class="sum__main">
                 <div class="sum__main-1">
@@ -90,7 +91,7 @@
                         <i class="fa-solid fa-warehouse" style="color: white;"></i>
                     </div>
                     <div class="main__data">
-                        <p>880</p>
+                        <p class="data" data-value="880">0</p>
                         <i class="fa-solid fa-caret-up" style="color: green; margin-top: 11px; margin-left: 14px;"></i>
                         <i class="fa-solid fa-caret-down"
                             style="color: red; margin-top: 5px; margin-left: 14px; margin-bottom: 6px;"></i>
@@ -101,11 +102,11 @@
                 </div>
                 <div class="sum__main-2">
                     <div class="main__text">
-                        <p>Tổng thiết bị</p>
+                        <p>Nhập kho</p>
                         <i class="fa-solid fa-warehouse" style="color: white;"></i>
                     </div>
                     <div class="main__data">
-                        <p>68</p>
+                        <p class="data" data-value="68"></p>
                         <i class="fa-solid fa-caret-up" class="up"
                             style="color: green; margin-top: 11px; margin-left: 14px;"></i>
                         <i class="fa-solid fa-caret-down"
@@ -118,10 +119,10 @@
                 <div class="sum__main-3">
                     <div class="main__text">
                         <p>Xuất kho</p>
-                        <i class="fa-solid fa-warehouse" style="color: white;"></i>
+                        <i class="fa-solid fa-truck" style="color: white;"></i>
                     </div>
                     <div class="main__data">
-                        <p>366</p>
+                        <p class="data" data-value="366"></p>
                         <i class="fa-solid fa-caret-up" style="color: green; margin-top: 11px; margin-left: 14px;"></i>
                         <i class="fa-solid fa-caret-down"
                             style="color: red; margin-top: 5px; margin-left: 14px; margin-bottom: 6px;"></i>
@@ -133,10 +134,10 @@
                 <div class="sum__main-4">
                     <div class="main__text">
                         <p>Chờ duyệt</p>
-                        <i class="fa-solid fa-warehouse" style="color: white;"></i>
+                        <i class="fa-solid fa-square-check" style="color: white;"></i>
                     </div>
                     <div class="main__data">
-                        <p>19</p>
+                        <p class="data" data-value="19"></p>
                         <i class="fa-solid fa-caret-up" style="color: green; margin-top: 11px; margin-left: 14px;"></i>
                         <i class="fa-solid fa-caret-down"
                             style="color: red; margin-top: 5px; margin-left: 14px; margin-bottom: 6px;"></i>
@@ -148,10 +149,10 @@
                 <div class="sum__main-5">
                     <div class="main__text">
                         <p>Đang bảo trì</p>
-                        <i class="fa-solid fa-warehouse" style="color: white;"></i>
+                        <i class="fa-solid fa-screwdriver-wrench" style="color: white;"></i>
                     </div>
                     <div class="main__data">
-                        <p>6</p>
+                        <p class="data" data-value="6"></p>
                         <i class="fa-solid fa-caret-up" style="color: green; margin-top: 11px; margin-left: 14px;"></i>
                         <i class="fa-solid fa-caret-down"
                             style="color: red; margin-top: 5px; margin-left: 14px; margin-bottom: 6px;"></i>
@@ -160,6 +161,75 @@
                         <div class="percent-bar" data-value="2">0%</div>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="notice-cards">
+            <div class="notice__header">
+                <div class="notice__header__text">
+                    <p style="font-size: 20px; font-weight: bold;">Thông Báo</p>
+                    <p id="todayDate" class="todayDate"></p>
+                </div>
+                <div class="notice__header__export"><a href="#"><i class="fa-solid fa-download"></i>Xuất File</a></div>
+            </div>
+            <div class="notice__main">
+                <div class="notice notice1">
+                    <p class="notice__tittle">Nhập kho</p>
+                    <p class="notice__main-text">Đã thêm 2 bộ thực hành điện vào kho</p>
+                </div>
+                <div class="notice notice2">
+                    <p class="notice__tittle">Chờ duyệt</p>
+                    <p class="notice__main-text">Có 19 phiếu nhập hàng cần duyệt</p>
+                </div>
+                <div class="notice notice2">
+                    <p class="notice__tittle">Vật tư</p>
+                    <p class="notice__main-text">Còn 2 chiếc kéo trong kho</p>
+                </div>
+                <div class="notice notice2">
+                    <p class="notice__tittle">Bảo trì</p>
+                    <p class="notice__main-text">Máy in đang được bảo trì</p>
+                </div>
+                <div class="notice notice2">
+                    <p class="notice__tittle">Chờ duyệt</p>
+                    <p class="notice__main-text">Có 19 phiếu nhập hàng cần duyệt</p>
+                </div>
+                <div class="notice notice2">
+                    <p class="notice__tittle">Chờ duyệt</p>
+                    <p class="notice__main-text">Có 19 phiếu nhập hàng cần duyệt</p>
+                </div>
+
+            </div>
+            <hr style="margin-top: 10px; margin-bottom: 20px;" />
+            <div class="notice__header history__header">
+                <div class="notice__header__text">
+                    <p style="font-size: 20px; font-weight: bold;">Hoạt Động Gần Đây</p>
+                </div>
+            </div>
+            <div class="notice__main">
+                <div class="notice notice1">
+                    <p class="notice__tittle">Nhập kho</p>
+                    <p class="notice__main-text">Đã thêm 2 bộ thực hành điện vào kho</p>
+                </div>
+                <div class="notice notice2">
+                    <p class="notice__tittle">Chờ duyệt</p>
+                    <p class="notice__main-text">Có 19 phiếu nhập hàng cần duyệt</p>
+                </div>
+                <div class="notice notice2">
+                    <p class="notice__tittle">Vật tư</p>
+                    <p class="notice__main-text">Còn 2 chiếc kéo trong kho</p>
+                </div>
+                <div class="notice notice2">
+                    <p class="notice__tittle">Bảo trì</p>
+                    <p class="notice__main-text">Máy in đang được bảo trì</p>
+                </div>
+                <div class="notice notice2">
+                    <p class="notice__tittle">Chờ duyệt</p>
+                    <p class="notice__main-text">Có 19 phiếu nhập hàng cần duyệt</p>
+                </div>
+                <div class="notice notice2">
+                    <p class="notice__tittle">Chờ duyệt</p>
+                    <p class="notice__main-text">Có 19 phiếu nhập hàng cần duyệt</p>
+                </div>
+
             </div>
         </div>
     </main>

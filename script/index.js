@@ -82,8 +82,11 @@ menuLinks.forEach((link) => {
   }
 });
 
-const today = new Date();
-document.getElementById("todayDate").textContent = today.toLocaleDateString();
+const todayDate = document.querySelectorAll(".todayDate");
+
+todayDate.forEach((e) => {
+  e.textContent = new Date().toLocaleDateString();
+});
 
 const percentBar = document.querySelectorAll(".percent-bar");
 
@@ -118,3 +121,25 @@ percentBar.forEach((bar) => {
     iconDown.classList.add("show");
   }
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const counters = document.querySelectorAll(".data");
+
+  counters.forEach((counter) => {
+    const target = parseInt(counter.getAttribute("data-value"), 10);
+    let current = 0;
+
+    const stepTime = 10;
+    const increment = Math.ceil(target / (1000 / stepTime));
+
+    const interval = setInterval(() => {
+      current += increment;
+      if (current >= target) {
+        current = target;
+        clearInterval(interval);
+      }
+      counter.textContent = current;
+    }, stepTime);
+  });
+});
+
