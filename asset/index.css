@@ -163,8 +163,7 @@ main {
 .drop-content-3,
 .drop-content-4,
 .drop-content-5,
-.drop-content-6,
-.drop-content-7 {
+.drop-content-6 {
   display: none;
   flex-direction: column;
   list-style: none;
@@ -199,18 +198,13 @@ main {
   display: flex;
   opacity: 1;
 }
-.drop-content-7.show {
-  display: flex;
-  opacity: 1;
-}
 
 .drop-content-1 li a,
 .drop-content-2 li a,
 .drop-content-3 li a,
 .drop-content-4 li a,
 .drop-content-5 li a,
-.drop-content-6 li a,
-.drop-content-7 li a {
+.drop-content-6 li a {
   font-size: 18px;
   text-decoration: none;
   color: #6e6e6e;
@@ -222,8 +216,7 @@ main {
 .drop-content-3 li a:hover,
 .drop-content-4 li a:hover,
 .drop-content-5 li a:hover,
-.drop-content-6 li a:hover,
-.drop-content-7 li a:hover {
+.drop-content-6 li a:hover {
   color: #2a2a2a;
 }
 
@@ -254,14 +247,17 @@ li.drop-down:hover .drop-box {
 
 main {
   margin-top: 70px;
-  margin-left: 20px;
+  margin-left: 40px;
   margin-right: 20px;
 }
 
 .sum-cards {
   position: fixed;
   display: inline-block;
-  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  width: 999px;
+  padding: 20px 50px;
   background-color: #f8f9fa;
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
@@ -294,8 +290,8 @@ main {
 .sum__main {
   display: flex;
   flex-direction: row;
-  margin-top: 30px;
-  gap: 30px;
+  margin-top: 20px;
+  gap: 40px;
 }
 
 .sum__main-1 {
@@ -435,8 +431,8 @@ main {
   position: fixed;
   padding: 20px;
   width: 385px;
-  height: 556px;
-  left: 950px;
+  height: 610px;
+  left: 1060px;
   top: 70px;
   background-color: #f8f9fa;
   border-radius: 12px;
@@ -474,7 +470,7 @@ main {
   padding: 10px;
   margin-left: 0px;
   width: 350px;
-  height: 230px;
+  height: 280px;
   margin-top: 10px;
   gap: 5px;
   background: transparent;
@@ -545,4 +541,19 @@ main {
   color: black;
   text-decoration: none;
   font-size: 12px;
+}
+
+.chart-cards {
+  display: flex;
+  flex-direction: row;
+  margin-top: 280px;
+  gap: 28px;
+}
+
+.chart {
+  width: 485px;
+  height: 328px;
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }

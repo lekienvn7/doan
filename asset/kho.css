@@ -199,18 +199,13 @@ main {
   display: flex;
   opacity: 1;
 }
-.drop-content-7.show {
-  display: flex;
-  opacity: 1;
-}
 
 .drop-content-1 li a,
 .drop-content-2 li a,
 .drop-content-3 li a,
 .drop-content-4 li a,
 .drop-content-5 li a,
-.drop-content-6 li a,
-.drop-content-7 li a {
+.drop-content-6 li a {
   font-size: 18px;
   text-decoration: none;
   color: #6e6e6e;
@@ -222,8 +217,7 @@ main {
 .drop-content-3 li a:hover,
 .drop-content-4 li a:hover,
 .drop-content-5 li a:hover,
-.drop-content-6 li a:hover,
-.drop-content-7 li a:hover {
+.drop-content-6 li a:hover {
   color: #2a2a2a;
 }
 
@@ -250,4 +244,55 @@ li.drop-down:hover .drop-box {
   background-color: #f8f9fa;
   color: #1e1e1e;
   border: none;
+}
+
+.dashboard {
+  display: fixed;
+  position: relative;
+  width: 300px;
+  height: 610px;
+  padding: 20px;
+  top: 70px;
+  left: 20px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 12px;
+
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.dashboard:hover {
+  transform: scale(1.05);
+}
+
+.board__header {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.board__main {
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+}
+
+.board__main ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 15px;
+}
+.board__main ul li a {
+  text-decoration: none;
+  color: #6e6e6e;
+
+  transition: color 0.2s ease;
+}
+.board__main ul li a:hover {
+  transform: scale(1.05);
+  color: #000;
+}
+
+.board__main .list {
+  color: #6e6e6e;
+  margin: 15px 5px;
 }

@@ -6,29 +6,21 @@ const menu3 = document.getElementById("dropDown3");
 const menu4 = document.getElementById("dropDown4");
 const menu5 = document.getElementById("dropDown5");
 const menu6 = document.getElementById("dropDown6");
-const menu7 = document.getElementById("dropDown7");
 const content1 = document.querySelector(".drop-content-1");
 const content2 = document.querySelector(".drop-content-2");
 const content3 = document.querySelector(".drop-content-3");
 const content4 = document.querySelector(".drop-content-4");
 const content5 = document.querySelector(".drop-content-5");
 const content6 = document.querySelector(".drop-content-6");
-const content7 = document.querySelector(".drop-content-7");
 
 headerMenu.addEventListener("mouseenter", () => {
   dropBox.classList.add("show");
 });
 
 function showContent(content) {
-  [
-    content1,
-    content2,
-    content3,
-    content4,
-    content5,
-    content6,
-    content7,
-  ].forEach((a) => a.classList.remove("show"));
+  [content1, content2, content3, content4, content5, content6].forEach((a) =>
+    a.classList.remove("show")
+  );
   content.classList.add("show");
 }
 
@@ -49,9 +41,6 @@ menu5.addEventListener("mouseenter", () => {
 });
 menu6.addEventListener("mouseenter", () => {
   showContent(content6);
-});
-menu7.addEventListener("mouseenter", () => {
-  showContent(content7);
 });
 
 headerMenu.addEventListener("mouseleave", () => {

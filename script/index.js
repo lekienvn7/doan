@@ -13,22 +13,15 @@ const content3 = document.querySelector(".drop-content-3");
 const content4 = document.querySelector(".drop-content-4");
 const content5 = document.querySelector(".drop-content-5");
 const content6 = document.querySelector(".drop-content-6");
-const content7 = document.querySelector(".drop-content-7");
 
 headerMenu.addEventListener("mouseenter", () => {
   dropBox.classList.add("show");
 });
 
 function showContent(content) {
-  [
-    content1,
-    content2,
-    content3,
-    content4,
-    content5,
-    content6,
-    content7,
-  ].forEach((a) => a.classList.remove("show"));
+  [content1, content2, content3, content4, content5, content6].forEach((a) =>
+    a.classList.remove("show")
+  );
   content.classList.add("show");
 }
 
@@ -49,9 +42,6 @@ menu5.addEventListener("mouseenter", () => {
 });
 menu6.addEventListener("mouseenter", () => {
   showContent(content6);
-});
-menu7.addEventListener("mouseenter", () => {
-  showContent(content7);
 });
 
 headerMenu.addEventListener("mouseleave", () => {
@@ -130,7 +120,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let current = 0;
 
     const stepTime = 10;
-    const increment  = Math.ceil(target / (1000 / stepTime));
+    const increment = Math.ceil(target / (1000 / stepTime));
 
     const interval = setInterval(() => {
       current += increment;
