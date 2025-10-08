@@ -245,6 +245,10 @@ li.drop-down:hover .drop-box {
   color: #1e1e1e;
   border: none;
 }
+main {
+  display: flex;
+  flex-direction: row;
+}
 
 .dashboard {
   display: fixed;
@@ -294,5 +298,16 @@ li.drop-down:hover .drop-box {
 
 .board__main .list {
   color: #6e6e6e;
-  margin: 15px 5px;
+  margin-top: 15px;
+  margin-left: 5px;
+}
+
+.main__box {
+  margin-top: 70px;
+  margin-left: 50px;
+  padding: 20px;
+  width: 1120px;
+  height: 610px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 12px;
 }
