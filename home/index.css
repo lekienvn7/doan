@@ -252,12 +252,18 @@ main {
   margin-right: 20px;
 }
 
-.sum-cards {
+.main__left {
   position: fixed;
+  display: flex;
+  flex-direction: column;
+  left: 50px;
+  gap: 20px;
+}
+
+.sum-cards {
   display: inline-block;
   justify-content: center;
   align-items: center;
-  width: 999px;
   padding: 20px 50px;
   background-color: #f8f9fa;
   border-radius: 12px;
@@ -432,9 +438,8 @@ main {
   position: fixed;
   padding: 20px;
   width: 385px;
-  height: 610px;
-  left: 1060px;
-  top: 70px;
+  height: 605px;
+  left: 1090px;
   background-color: #f8f9fa;
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
@@ -547,12 +552,11 @@ main {
 .chart-cards {
   display: flex;
   flex-direction: row;
-  margin-top: 280px;
-  gap: 28px;
+  gap: 30px;
 }
 
 .chart {
-  width: 485px;
+  width: 490px;
   height: 328px;
   background-color: #f8f9fa;
   border-radius: 12px;
